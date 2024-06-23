@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            margin:30px ;
+            margin-left: 50px;
+        }
+        .content{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+        }
+        .div{
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="div">
+  <img src="imgf1.jpg" id="id1"  onmouseover="changeImg1()" onmouseout="changeImg2()"></div>
+  <img src="imgf2.jpg" id="id2"  onmouseover="changeImg2()" onmouseout="changeImg3()">
+  <img src="imgf3.jpg" id="id3"  onmouseover="changeImg3()" onmouseout="changeImg4()">
+  <img src="imgf4.jpg" id="id4"  onmouseover="changeImg4()" onmouseout="changeImg6()">
+  <img src="imgf5.jpg" id="id5"  onmouseover="changeImg5()" onmouseout="changeImg1()">
+  <img src="imgf6.jpg" id="id6"  onmouseover="changeImg6()" onmouseout="changeImg5()"></div>
+  <script>
+    function changeImg1(){
+        document.getElementById("id1").src="imgf1.jpg"
+    }
+    function changeImg2(){
+        document.getElementById("id1").src="imgf2.jpg"
+    }
+    function changeImg3(){
+        document.getElementById("id1").src="imgf3.jpg"
+    }
+    function changeImg4(){
+        document.getElementById("id1").src="imgf4.jpg"
+    }
+    function changeImg5(){
+        document.getElementById("id1").src="imgf5.jpg"
+    }
+    function changeImg6(){
+        document.getElementById("id1").src="imgf6.jpg"
+    }
+  </script>
+</body>
+</html>
